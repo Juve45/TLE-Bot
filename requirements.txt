@@ -1,4 +1,5 @@
 poetry
+discord.py
 seaborn
 lxml
 pillow
