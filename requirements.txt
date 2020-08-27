@@ -1,3 +1,4 @@
+poetry
 seaborn
 lxml
 pillow
