@@ -1,2 +1,8 @@
-
+seaborn
+lxml
+pillow
+pycairo
+PyGObject
+aiocache
+pytest
 
