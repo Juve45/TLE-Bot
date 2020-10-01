@@ -7,10 +7,10 @@ optional = false
 python-versions = "*"
 
 [package.extras]
+dev = ["asynctest (>=0.11.0)", "codecov", "coverage", "flake8", "ipdb", "marshmallow", "pystache", "pytest", "pytest-asyncio", "pytest-mock", "sphinx", "sphinx-autobuild", "sphinx-rtd-theme", "black"]
 memcached = ["aiomcache (>=0.5.2)"]
 msgpack = ["msgpack (>=0.5.5)"]
 redis = ["aioredis (>=0.3.3)", "aioredis (>=1.0.0)"]
-dev = ["asynctest (>=0.11.0)", "codecov", "coverage", "flake8", "ipdb", "marshmallow", "pystache", "pytest", "pytest-asyncio", "pytest-mock", "sphinx", "sphinx-autobuild", "sphinx-rtd-theme", "black"]
 
 [[package]]
 name = "aiohttp"
@@ -21,11 +21,11 @@ optional = false
 python-versions = ">=3.5.3"
 
 [package.dependencies]
-yarl = ">=1.0,<2.0"
-multidict = ">=4.5,<5.0"
-chardet = ">=2.0,<4.0"
-attrs = ">=17.3.0"
 async-timeout = ">=3.0,<4.0"
+attrs = ">=17.3.0"
+chardet = ">=2.0,<4.0"
+multidict = ">=4.5,<5.0"
+yarl = ">=1.0,<2.0"
 
 [package.extras]
 speedups = ["aiodns", "brotlipy", "cchardet"]
@@ -55,10 +55,10 @@ optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
 
 [package.extras]
+dev = ["coverage[toml] (>=5.0.2)", "hypothesis", "pympler", "pytest (>=4.3.0)", "six", "zope.interface", "sphinx", "sphinx-rtd-theme", "pre-commit"]
 docs = ["sphinx", "sphinx-rtd-theme", "zope.interface"]
 tests = ["coverage[toml] (>=5.0.2)", "hypothesis", "pympler", "pytest (>=4.3.0)", "six", "zope.interface"]
 tests_no_zope = ["coverage[toml] (>=5.0.2)", "hypothesis", "pympler", "pytest (>=4.3.0)", "six"]
-dev = ["coverage[toml] (>=5.0.2)", "hypothesis", "pympler", "pytest (>=4.3.0)", "six", "zope.interface", "sphinx", "sphinx-rtd-theme", "pre-commit"]
 
 [[package]]
 name = "chardet"
@@ -142,10 +142,10 @@ optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, != 3.4.*"
 
 [package.extras]
-source = ["Cython (>=0.29.7)"]
 cssselect = ["cssselect (>=0.7)"]
 html5 = ["html5lib"]
 htmlsoup = ["beautifulsoup4"]
+source = ["Cython (>=0.29.7)"]
 
 [[package]]
 name = "matplotlib"
@@ -156,11 +156,11 @@ optional = false
 python-versions = ">=3.6"
 
 [package.dependencies]
-python-dateutil = ">=2.1"
 cycler = ">=0.10"
+kiwisolver = ">=1.0.1"
 numpy = ">=1.11"
 pyparsing = ">=2.0.1,<2.0.4 || >2.0.4,<2.1.2 || >2.1.2,<2.1.6 || >2.1.6"
-kiwisolver = ">=1.0.1"
+python-dateutil = ">=2.1"
 
 [[package]]
 name = "more-itertools"
@@ -195,9 +195,9 @@ optional = false
 python-versions = ">=3.6.1"
 
 [package.dependencies]
+numpy = ">=1.15.4"
 python-dateutil = ">=2.7.3"
 pytz = ">=2017.2"
-numpy = ">=1.15.4"
 
 [package.extras]
 test = ["pytest (>=4.0.2)", "pytest-xdist", "hypothesis (>=3.58)"]
@@ -268,13 +268,13 @@ optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
 
 [package.dependencies]
-more-itertools = ">=4.0.0"
-six = ">=1.10.0"
-py = ">=1.5.0"
-colorama = {version = "*", markers = "sys_platform == \"win32\""}
-attrs = ">=17.4.0"
-pluggy = ">=0.7"
 atomicwrites = ">=1.0"
+attrs = ">=17.4.0"
+colorama = {version = "*", markers = "sys_platform == \"win32\""}
+more-itertools = ">=4.0.0"
+pluggy = ">=0.7"
+py = ">=1.5.0"
+six = ">=1.10.0"
 
 [[package]]
 name = "python-dateutil"
@@ -315,10 +315,10 @@ optional = false
 python-versions = "*"
 
 [package.dependencies]
-scipy = ">=0.17.1"
+matplotlib = ">=1.5.3"
 numpy = ">=1.10.4"
 pandas = ">=0.17.1"
-matplotlib = ">=1.5.3"
+scipy = ">=0.17.1"
 
 [[package]]
 name = "six"
@@ -345,9 +345,9 @@ optional = false
 python-versions = ">=3.5"
 
 [package.dependencies]
-typing-extensions = {version = ">=3.7.4", markers = "python_version < \"3.8\""}
-multidict = ">=4.0"
 idna = ">=2.0"
+multidict = ">=4.0"
+typing-extensions = {version = ">=3.7.4", markers = "python_version < \"3.8\""}
 
 [[package]]
 name = "zipp"
@@ -363,8 +363,8 @@ testing = ["pytest (>=3.5,<3.7.3 || >3.7.3)", "pytest-checkdocs (>=1.2.3)", "pyt
 
 [metadata]
 lock-version = "1.1"
-python-versions = "^3.7.2"
-content-hash = "9d9e45d9687183dc0724898033b9c70b6d17e429b8506fcd4df7f5686d5ff7e9"
+python-versions = "3.7.2"
+content-hash = "5ed2c69cf433635884b76a8050216d9c8475185ef3851aa42c26b3137c410ffa"
 
 [metadata.files]
 aiocache = [
